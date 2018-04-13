@@ -91,15 +91,15 @@ AC_CONFIG_FILES([Makefile                \
                  src/drm/Makefile        \
                  src/dstripe/Makefile    \
                  src/dwalk/Makefile      \
-                 doc/Makefile            \
-                 doc/man/Makefile        \
-                 doc/man/man1/Makefile   \
+                 docs/Makefile            \
+                 docs/man/Makefile        \
+                 docs/man/man1/Makefile   \
 ])
-#                 doc/html/Makefile       \
+#                 docs/html/Makefile       \
 
 # Check if we should build the experimental utilities.
 X_AC_EXPERIMENTAL
-if test [EXPERIMENTAL_ENABLED]; then 
+if test [EXPERIMENTAL_ENABLED]; then
 AC_CONFIG_FILES([experimental/Makefile           \
                  experimental/dparallel/Makefile \
                  experimental/dsh/Makefile       \
